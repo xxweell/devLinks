@@ -13,4 +13,17 @@ body {
 #container {
   width: 360px;
   height: 712px;
+  border: 1px solid red;
+  margin: auto; /* só funciona pq tem a largura fixa. width: 360px */
+}
+
+#profile {
+  /* elemento pai do elemento img */
+  text-align: center;
+}
+
+#profile img {
+  width: 112px;
+  /* margin: auto; em elemento que são do tipo display: inline eu não consigo aplicar o margin: auto. Pra isso, sempre que o elemento for do tipo
+  inline, posso aplicar o text-align: center no elemento que for o pai. */
 }
