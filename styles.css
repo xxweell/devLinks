@@ -30,6 +30,8 @@ body * {
   margin-right: auto;
   margin-bottom: 0;
   margin-left: auto; */
+
+  padding: 0 24px;
 }
 #profile {
   /* elemento pai do elemento img */
@@ -47,4 +49,38 @@ body * {
   font-weight: 500;
   line-height: 24px;
   margin-top: 8px;
+}
+
+/* Links */
+
+ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 24px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: background 0.2s; /* aplica a transição no elemento que está em hover */
+}
+
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid white;
 }
