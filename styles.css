@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   /*
   background-image: url(./assets/bg-mobile.jpg);
@@ -10,20 +16,35 @@ body {
   background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
 }
 
-#container {
-  width: 360px;
-  height: 712px;
-  border: 1px solid red;
-  margin: auto; /* só funciona pq tem a largura fixa. width: 360px */
+body * {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
 }
 
+#container {
+  width: 360px;
+  margin: 56px auto 0px;
+
+  /* margin: auto; /* só funciona pq tem a largura fixa. width: 360px */
+  /* margin-top: 56px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto; */
+}
 #profile {
   /* elemento pai do elemento img */
   text-align: center;
+  padding: 24px;
 }
 
 #profile img {
   width: 112px;
-  /* margin: auto; em elemento que são do tipo display: inline eu não consigo aplicar o margin: auto. Pra isso, sempre que o elemento for do tipo
+  /* margin: auto; em elementos que são do tipo display: inline eu não consigo aplicar o margin: auto. Pra isso, sempre que o elemento for do tipo
   inline, posso aplicar o text-align: center no elemento que for o pai. */
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
 }
